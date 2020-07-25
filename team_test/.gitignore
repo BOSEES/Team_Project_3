@@ -1,0 +1,6 @@
+node_modules
+package-lock.json
+
+# 이건 git 으로 git add . 할때 걸러주는 파일입니다.
+# 레퍼지토리에 올릴때 node_modules 는 너무 무겁고 , package-lock.json 은 보안상 올리지 않는게 
+# 좋다고들 합니다. 위에 파일,혹은 디렉토리를 적어넣으면 저걸 뺀 나머지들만 git add 가 됩니다.
