@@ -13,3 +13,5 @@ app.use(bodyParser.json());   // 사용자가 웹사이트로 전달하는 정�
 app.use(routes.home, homeRouter);
 app.use(routes.items, itemRouter);   // 일단 기본적인 구성은 homeRouter(global 영역) ,userRouter(유저영역),itemRouter(물품영역) 으로 나누겠씁니다. 
 app.use(routes.users, userRouter);   // Router 경로를 대표적으로 3개로 나누어서 만들었구요 경로를 가져오는 파일은 routes.js라는 객체형 파일입니다.
+
+export default app;
