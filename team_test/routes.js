@@ -1,6 +1,7 @@
 // home(global)
 const home = "/";
 const login = "/login";
+const login2 = "/login/:id"
 const logout = "/logout";
 const join = "/join";
 const upload = "/upload"; 
@@ -9,6 +10,7 @@ const users = "/users" //mypage 와 같은 유저 정보와 등록리스트를 �
 const routes = {
     home : home,
     login : login,
+    login2 : login2,
     logout : logout,
     join : join,
     upload : upload,

@@ -2,79 +2,64 @@
     <head>
         <%- include('partials/head') %>
     </head>
+        <style>
+            .container.item{
+                width: 0;
+                margin: 40px;
+            }
+        </style>
     <body>
-        <div class="upload-section">
-            <div class="header">            
-                <h1>물품등록</h1>
+        <!-- item_brand -->
+        <div style="display:flex;" >
+        <div class="container item">
+            <div class="dropdown" id="mydropdown">
+              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                삼성
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">s20</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">s10</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">s9</a></li>
+              </ul>
+            </div> 
+                <br/>
+        </div>
+        <!-- item_list -->
+        <div style="display:flex;" >
+            <div class="container item">
+                <div class="dropdown" id="mydropdown">
+                  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                    엘지
+                    <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">G20</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">G10</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">G9</a></li>
+                  </ul>
+                </div> 
+                    <br/>
+            </div>
+        <!-- item_price -->
+        <div style="display:flex;" >
+            <div class="container item">
+                <div class="dropdown" id="mydropdown">
+                  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                    애플
+                    <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">iPhone 11</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">iPhone 10</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">iPhone 9</a></li>
+                  </ul>
+                </div> 
+                    <br/>
             </div>
         </div>
-
-        <nav class="navbar navbar-default">
-              <!-- Collect the nav links, forms, and other content for toggling -->
-              <div class="navbar-collapse collapse in" id="bs-example-navbar-collapse-1" aria-expanded="true" style="">
-                <ul class="nav navbar-nav navbar-left">
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                            삼성<span class="caret"></span>
-                        </a>
-                        <ul class="dropdown-menu" >
-                            <li class="">
-                                <a id="first" href="#" >S20</a>
-                            </li>
-                            <li class="">
-                                <a href="#/">S10</a>
-                            </li>
-                            <li class="">
-                                <a href="#">S9</a>
-                            </li>
-                        </ul>
-                    </li>
-                    
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                            LG<span class="caret"></span>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li class="">
-                                <a href="#">S10</a>
-                            </li>
-                            <li class="">
-                                <a href="#/">S9</a>
-                            </li>
-                            <li class="">
-                                <a href="#">S8</a>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                            Apple<span class="caret"></span>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li class="">
-                                <a href="#">iPhone 11</a>
-                            </li>
-                            <li class="">
-                                <a href="#/">iPhone 10</a>
-                            </li>
-                            <li class="">
-                                <a href="#">iPhone 9</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-              </div>
-              <!-- /.navbar-collapse -->
-            </div>
-            <!-- /.container -->
+        <sectionc>
             <button class="btn btn-primary" onclick=alert("등록완료!") >제품 등록</button>
-       </nav>
+        </sectionc>
     </body>
-
 </html>
-<script>
-    $("#first").click(()=>{
-        alert("현재 시세는 ~~ 입니다.");
-    })
-</script>

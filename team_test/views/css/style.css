@@ -8,6 +8,10 @@ By: dave-cheon
 @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 * { font-family: 'Nanum Gothic', sans-serif; }
 
+.container{
+  align-items: center;
+}
+
 .spaceLeft {
   margin-left: 10px;
 }

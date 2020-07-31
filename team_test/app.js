@@ -1,5 +1,6 @@
 import express from "express"; // express 라는 함수에 require 를 통해 node js 프레임워크 express를 요청해서 대입하였음. express를 사용하기 위한 방법임.
 import bodyParser from "body-parser";
+import session from "express-session";
 import globalRouter from "./router/globalRouter";
 import routes from "./routes";
 // import Web3 from "Web3";
